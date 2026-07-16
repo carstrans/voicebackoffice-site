@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Der KI-Telefonassistent für Verkauf und Kundenservice: erreichbar rund um die Uhr, natürlich im Gespräch und passend zu Ihrem Unternehmen.">
   <title>Voice Back Office — KI-Telefonassistent für Unternehmen</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="language.css">
 </head>
@@ -114,14 +111,14 @@
         <label><span data-i18n="commentLabel">Ihre Aufgabe oder Anmerkung</span>
           <textarea name="comment" rows="4" placeholder="Beschreiben Sie kurz, was der Assistent für Sie erledigen soll"></textarea>
         </label>
-        <label class="consent"><input type="checkbox" name="consent" required><span data-i18n="consent">Ich stimme der Verarbeitung meiner Daten zu</span></label>
+        <label class="consent"><input type="checkbox" name="consent" required><span data-i18n-html="consent">Ich habe die <a href="privacy.html?lang=de" target="_blank" rel="noopener">Datenschutzhinweise</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.</span></label>
         <button class="button button-primary submit" type="submit" data-i18n-html="submit">Live-Demo anfragen <span>→</span></button>
         <p class="form-status" aria-live="polite"></p>
       </form>
     </section>
   </main>
 
-  <footer><a class="logo" href="#top"><span class="logo-mark"><i></i><i></i><i></i><i></i></span><span>VOICE <b>BACK OFFICE</b></span></a><p data-i18n="footerTagline">Sprach-KI für mehr Umsatz</p><span>© 2026 Voice Back Office</span></footer>
+  <footer><a class="logo" href="#top"><span class="logo-mark"><i></i><i></i><i></i><i></i></span><span>VOICE <b>BACK OFFICE</b></span></a><p data-i18n="footerTagline">Sprach-KI für mehr Umsatz</p><nav class="footer-links"><a href="privacy.html?lang=de" data-i18n="privacyLink">Datenschutz</a><span>© 2026 Voice Back Office</span></nav></footer>
 
   <div class="success-modal" id="success-modal" hidden>
     <div class="success-card"><div class="success-icon">✓</div><h2 data-i18n="successTitle">Anfrage erhalten</h2><p data-i18n="successText">Vielen Dank! Wir melden uns in Kürze bei Ihnen.</p><button type="button" id="close-modal" data-i18n="successButton">Alles klar</button></div>

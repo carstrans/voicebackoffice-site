@@ -25,6 +25,13 @@ const translations = {
   }
 };
 
+translations.de.consent = 'Ich habe die <a href="privacy.html?lang=de" target="_blank" rel="noopener">Datenschutzhinweise</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.';
+translations.de.privacyLink = 'Datenschutz';
+translations.ru.consent = 'Я прочитал(а) <a href="privacy.html?lang=ru" target="_blank" rel="noopener">политику конфиденциальности</a> и согласен(на) на обработку данных для ответа на мою заявку.';
+translations.ru.privacyLink = 'Конфиденциальность';
+translations.en.consent = 'I have read the <a href="privacy.html?lang=en" target="_blank" rel="noopener">privacy notice</a> and agree to the processing of my data to handle my request.';
+translations.en.privacyLink = 'Privacy';
+
 const form = document.querySelector('#lead-form');
 const modal = document.querySelector('#success-modal');
 const closeModal = document.querySelector('#close-modal');
@@ -46,6 +53,7 @@ function setLanguage(language, updateUrl = true) {
   inputs.forEach((input, index) => { input.placeholder = copy.placeholders[index]; });
   document.querySelectorAll('[data-task-index]').forEach((element) => { element.textContent = copy.tasks[Number(element.dataset.taskIndex)]; });
   document.querySelectorAll('[data-lang]').forEach((button) => button.classList.toggle('active', button.dataset.lang === currentLanguage));
+  document.querySelector('.footer-links a').href = `privacy.html?lang=${currentLanguage}`;
   localStorage.setItem('ybo-language', currentLanguage);
   if (updateUrl) {
     const url = new URL(window.location.href);

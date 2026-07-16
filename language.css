@@ -56,6 +56,13 @@
 
 .form-honey { display: none !important; }
 
+.consent { align-items: flex-start; line-height: 1.45; }
+.consent input { flex: 0 0 auto; margin-top: 1px; }
+.consent a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+.footer-links { display: flex; align-items: center; gap: 20px; }
+.footer-links a { text-decoration: underline; text-underline-offset: 3px; }
+.footer-links span { color: #85868d; }
+
 .task-options {
   border: 0;
   padding: 0;
@@ -104,6 +111,7 @@
   .header-tools { gap: 7px; }
   .language-switcher button { padding: 6px 7px; }
   html[lang="de"] .hero h1 { font-size: 39px; }
+  .footer-links { align-items: flex-start; flex-direction: column; gap: 9px; }
 }
 
 /* Voice Back Office — luminous indigo and raspberry pink */
