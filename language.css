@@ -49,6 +49,22 @@
   outline: none;
 }
 
+.voice-demo-action { margin-top: 30px; }
+.voice-demo-label { display: flex; align-items: center; gap: 8px; margin: 0 0 11px; color: #d7d8e1; font-size: 9px; letter-spacing: .13em; }
+.voice-demo-label span { width: 7px; height: 7px; border-radius: 50%; background: var(--violet); box-shadow: 0 0 13px rgba(231, 77, 133, .8); }
+.voice-demo-button {
+  width: 100%;
+  max-width: 440px;
+  color: #fff;
+  background: linear-gradient(110deg, var(--lime), #6f52df 58%, var(--violet));
+  box-shadow: 0 14px 34px rgba(82, 83, 216, .28);
+}
+.voice-demo-button:hover { transform: translateY(-1px); }
+.voice-demo-button:disabled { cursor: wait; opacity: .72; }
+.voice-demo-button span { color: #fff; }
+.voice-demo-note { max-width: 440px; margin: 10px 0 0; color: #8f9098; font-size: 10px; line-height: 1.55; }
+.voice-demo-status { min-height: 18px; max-width: 440px; margin: 7px 0 0; color: #f2a9c2; font-size: 11px; }
+
 .demo-form textarea:focus {
   border-color: var(--violet);
   box-shadow: 0 0 0 3px rgba(116, 87, 255, .1);
