@@ -1,8 +1,8 @@
 const privacyCopy = {
-  de: { title: 'Datenschutz — Voice Back Office', description: 'Datenschutzhinweise von Voice Back Office', back: '← Zur Website' },
-  ru: { title: 'Конфиденциальность — Voice Back Office', description: 'Политика конфиденциальности Voice Back Office', back: '← На сайт' },
-  uk: { title: 'Конфіденційність — Voice Back Office', description: 'Політика конфіденційності Voice Back Office', back: '← На сайт' },
-  en: { title: 'Privacy — Voice Back Office', description: 'Voice Back Office privacy notice', back: '← Back to website' }
+  de: { title: 'Datenschutz — Voice Back Office', description: 'Datenschutzhinweise von Voice Back Office', back: '← Zur Website', imprint: 'Impressum' },
+  ru: { title: 'Конфиденциальность — Voice Back Office', description: 'Политика конфиденциальности Voice Back Office', back: '← На сайт', imprint: 'Выходные данные' },
+  uk: { title: 'Конфіденційність — Voice Back Office', description: 'Політика конфіденційності Voice Back Office', back: '← На сайт', imprint: 'Вихідні дані' },
+  en: { title: 'Privacy — Voice Back Office', description: 'Voice Back Office privacy notice', back: '← Back to website', imprint: 'Legal notice' }
 };
 
 function setPrivacyLanguage(requestedLanguage) {
@@ -14,6 +14,9 @@ function setPrivacyLanguage(requestedLanguage) {
   const back = document.querySelector('[data-copy="back"]');
   back.textContent = copy.back;
   back.href = `index.html?lang=${language}`;
+  const imprint = document.querySelector('.footer-links a');
+  imprint.textContent = copy.imprint;
+  imprint.href = `imprint.html?lang=${language}`;
   document.querySelectorAll('[data-language]').forEach((article) => { article.hidden = article.dataset.language !== language; });
   document.querySelectorAll('[data-lang]').forEach((button) => button.classList.toggle('active', button.dataset.lang === language));
   localStorage.setItem('ybo-language', language);

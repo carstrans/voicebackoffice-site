@@ -36,11 +36,15 @@ translations.uk = {
 
 translations.de.consent = 'Ich habe die <a href="privacy.html?lang=de" target="_blank" rel="noopener">Datenschutzhinweise</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage sowie zur telefonischen Kontaktaufnahme zu.';
 translations.de.privacyLink = 'Datenschutz';
+translations.de.imprintLink = 'Impressum';
 translations.ru.consent = 'Я прочитал(а) <a href="privacy.html?lang=ru" target="_blank" rel="noopener">политику конфиденциальности</a> и согласен(на) на обработку данных и телефонный контакт для ответа на мою заявку.';
 translations.ru.privacyLink = 'Конфиденциальность';
+translations.ru.imprintLink = 'Выходные данные';
 translations.uk.consent = 'Я прочитав(-ла) <a href="privacy.html?lang=uk" target="_blank" rel="noopener">політику конфіденційності</a> та погоджуюся на обробку даних і телефонний контакт для розгляду моєї заявки.';
+translations.uk.imprintLink = 'Вихідні дані';
 translations.en.consent = 'I have read the <a href="privacy.html?lang=en" target="_blank" rel="noopener">privacy notice</a> and agree to the processing of my data and telephone contact to handle my request.';
 translations.en.privacyLink = 'Privacy';
+translations.en.imprintLink = 'Legal notice';
 
 const form = document.querySelector('#lead-form');
 const modal = document.querySelector('#success-modal');
@@ -63,7 +67,8 @@ function setLanguage(language, updateUrl = true) {
   inputs.forEach((input, index) => { input.placeholder = copy.placeholders[index]; });
   document.querySelectorAll('[data-task-index]').forEach((element) => { element.textContent = copy.tasks[Number(element.dataset.taskIndex)]; });
   document.querySelectorAll('[data-lang]').forEach((button) => button.classList.toggle('active', button.dataset.lang === currentLanguage));
-  document.querySelector('.footer-links a').href = `privacy.html?lang=${currentLanguage}`;
+  document.querySelector('.footer-links a[href^="imprint"]').href = `imprint.html?lang=${currentLanguage}`;
+  document.querySelector('.footer-links a[href^="privacy"]').href = `privacy.html?lang=${currentLanguage}`;
   localStorage.setItem('ybo-language', currentLanguage);
   if (updateUrl) {
     const url = new URL(window.location.href);
