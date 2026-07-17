@@ -1,6 +1,7 @@
 const privacyCopy = {
   de: { title: 'Datenschutz — Voice Back Office', description: 'Datenschutzhinweise von Voice Back Office', back: '← Zur Website' },
   ru: { title: 'Конфиденциальность — Voice Back Office', description: 'Политика конфиденциальности Voice Back Office', back: '← На сайт' },
+  uk: { title: 'Конфіденційність — Voice Back Office', description: 'Політика конфіденційності Voice Back Office', back: '← На сайт' },
   en: { title: 'Privacy — Voice Back Office', description: 'Voice Back Office privacy notice', back: '← Back to website' }
 };
 
