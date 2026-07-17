@@ -46,8 +46,27 @@
   padding: 13px 14px;
   margin-top: 8px;
   font: 500 13px Manrope, sans-serif;
+  color: #24233b;
+  -webkit-text-fill-color: #24233b;
+  caret-color: var(--lime);
   outline: none;
 }
+
+.demo-form input,
+.demo-form select {
+  color: #24233b;
+  -webkit-text-fill-color: #24233b;
+  caret-color: var(--lime);
+}
+
+.demo-form input::placeholder,
+.demo-form textarea::placeholder {
+  color: #85859a;
+  -webkit-text-fill-color: #85859a;
+  opacity: 1;
+}
+
+.demo-form select option { color: #24233b; background: #fff; }
 
 .voice-demo-action { margin-top: 30px; }
 .voice-demo-label { display: flex; align-items: center; gap: 8px; margin: 0 0 11px; color: #d7d8e1; font-size: 9px; letter-spacing: .13em; }
