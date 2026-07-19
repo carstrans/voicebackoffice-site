@@ -46,6 +46,62 @@ translations.en.consent = 'I have read the <a href="privacy.html?lang=en" target
 translations.en.privacyLink = 'Privacy';
 translations.en.imprintLink = 'Legal notice';
 
+translations.de.industryEyebrow = 'Für Unternehmen mit echten Kundenanrufen';
+translations.de.industryTitle = 'Wo jeder Anruf<br><em>zum Geschäft werden kann</em>';
+translations.de.industryLead = 'Voice Back Office wird an Ihre Leistungen, Preise, Öffnungszeiten und Regeln angepasst — damit aus Fragen Reservierungen, Termine und neue Aufträge werden.';
+translations.de.industries = [
+  ['Beauty & Wellness', 'Termine für Friseur, Kosmetik, Waxing, Nägel und Massage buchen oder verschieben.'],
+  ['Restaurants & Cafés', 'Tische reservieren, Bestellungen aufnehmen und Fragen zu Allergien beantworten.'],
+  ['Hotels & Hostels', 'Zimmeranfragen, Verfügbarkeit, Check-in und mehrsprachige Gästefragen bearbeiten.'],
+  ['Praxen & Zahnärzte', 'Termine koordinieren, Anliegen erfassen und dringende Fälle richtig weiterleiten.'],
+  ['Immobilien', 'Interessenten qualifizieren, Besichtigungen planen und Objektfragen beantworten.'],
+  ['Handwerk & Hausservice', 'Dringlichkeit, Einsatzgebiet und Auftrag klären und passende Termine vergeben.'],
+  ['Auto & Mobilität', 'Werkstatttermine, Pannenhilfe, Rückrufe und Serviceanfragen zuverlässig übernehmen.'],
+  ['Beratung & Bildung', 'Erstgespräche buchen, Anfragen vorqualifizieren und Informationen rund um die Uhr geben.']
+];
+
+translations.ru.industryEyebrow = 'Для бизнеса, которому звонят клиенты';
+translations.ru.industryTitle = 'Где каждый звонок<br><em>может стать продажей</em>';
+translations.ru.industryLead = 'Voice Back Office изучает ваши услуги, цены, расписание и правила — и превращает вопросы клиентов в бронирования, записи и новые заказы.';
+translations.ru.industries = [
+  ['Красота и wellness', 'Запись и перенос визитов в парикмахерские, косметологии, студии депиляции, маникюра и массажа.'],
+  ['Рестораны и кафе', 'Бронирование столиков, приём заказов и ответы на вопросы об аллергенах и меню.'],
+  ['Отели и хостелы', 'Наличие номеров, бронирование, заселение и ответы гостям на разных языках.'],
+  ['Клиники и стоматологии', 'Запись пациентов, сбор первичной информации и правильная передача срочных обращений.'],
+  ['Недвижимость', 'Квалификация клиентов, запись на просмотры и ответы по объектам.'],
+  ['Ремонт и услуги для дома', 'Определение срочности, адреса и вида работ с назначением удобного времени.'],
+  ['Авто и мобильность', 'Запись в сервис, помощь при поломках, обратные звонки и клиентские обращения.'],
+  ['Консалтинг и образование', 'Запись на консультации, квалификация заявок и ответы круглосуточно.']
+];
+
+translations.uk.industryEyebrow = 'Для бізнесу, якому телефонують клієнти';
+translations.uk.industryTitle = 'Де кожен дзвінок<br><em>може стати продажем</em>';
+translations.uk.industryLead = 'Voice Back Office вивчає ваші послуги, ціни, графік і правила — та перетворює запитання клієнтів на бронювання, записи й нові замовлення.';
+translations.uk.industries = [
+  ['Краса та wellness', 'Запис і перенесення візитів до перукарень, косметологій, студій депіляції, манікюру й масажу.'],
+  ['Ресторани та кафе', 'Бронювання столиків, приймання замовлень і відповіді щодо алергенів та меню.'],
+  ['Готелі та хостели', 'Наявність номерів, бронювання, заселення й відповіді гостям різними мовами.'],
+  ['Клініки та стоматології', 'Запис пацієнтів, збір первинної інформації та передавання термінових звернень.'],
+  ['Нерухомість', 'Кваліфікація клієнтів, запис на перегляди й відповіді щодо об’єктів.'],
+  ['Ремонт і послуги для дому', 'Визначення терміновості, адреси й виду робіт із призначенням зручного часу.'],
+  ['Авто та мобільність', 'Запис у сервіс, допомога при поломках, зворотні дзвінки й клієнтські звернення.'],
+  ['Консалтинг та освіта', 'Запис на консультації, кваліфікація заявок і цілодобові відповіді.']
+];
+
+translations.en.industryEyebrow = 'For businesses that receive real customer calls';
+translations.en.industryTitle = 'Where every call<br><em>can become new business</em>';
+translations.en.industryLead = 'Voice Back Office learns your services, pricing, opening hours and rules — turning customer questions into reservations, appointments and new orders.';
+translations.en.industries = [
+  ['Beauty & wellness', 'Book or reschedule hair, beauty, waxing, nail and massage appointments.'],
+  ['Restaurants & cafés', 'Reserve tables, take orders and answer questions about menus and allergens.'],
+  ['Hotels & hostels', 'Handle room availability, reservations, check-in and multilingual guest questions.'],
+  ['Medical & dental practices', 'Coordinate appointments, capture initial details and route urgent enquiries correctly.'],
+  ['Real estate', 'Qualify prospects, schedule viewings and answer property questions.'],
+  ['Home & trade services', 'Clarify urgency, service area and job type, then schedule the right visit.'],
+  ['Automotive & mobility', 'Handle service bookings, roadside enquiries, callbacks and customer support.'],
+  ['Consulting & education', 'Book consultations, qualify enquiries and provide information around the clock.']
+];
+
 const form = document.querySelector('#lead-form');
 const modal = document.querySelector('#success-modal');
 const closeModal = document.querySelector('#close-modal');
@@ -114,6 +170,8 @@ function setLanguage(language, updateUrl = true) {
   const inputs = [form.elements.name, phone, form.elements.website, form.elements.comment];
   inputs.forEach((input, index) => { input.placeholder = copy.placeholders[index]; });
   document.querySelectorAll('[data-task-index]').forEach((element) => { element.textContent = copy.tasks[Number(element.dataset.taskIndex)]; });
+  document.querySelectorAll('[data-industry-title]').forEach((element) => { element.textContent = copy.industries[Number(element.dataset.industryTitle)][0]; });
+  document.querySelectorAll('[data-industry-text]').forEach((element) => { element.textContent = copy.industries[Number(element.dataset.industryText)][1]; });
   document.querySelectorAll('[data-lang]').forEach((button) => button.classList.toggle('active', button.dataset.lang === currentLanguage));
   document.querySelector('.footer-links a[href^="imprint"]').href = `imprint.html?lang=${currentLanguage}`;
   document.querySelector('.footer-links a[href^="privacy"]').href = `privacy.html?lang=${currentLanguage}`;
