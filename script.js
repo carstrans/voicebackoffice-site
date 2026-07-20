@@ -129,6 +129,10 @@ Object.assign(translations.de, {voiceDemoNote:'Füllen Sie die Anfrage für Ihr 
 Object.assign(translations.ru, {voiceDemoNote:'Заполните заявку на ваш Voice Back Office — и уже на следующий день получите его персональный номер.',voiceDemoError:'Заполните заявку на ваш Voice Back Office — и уже на следующий день получите его персональный номер.'});
 Object.assign(translations.uk, {voiceDemoNote:'Заповніть заявку на ваш Voice Back Office — і вже наступного дня отримайте його персональний номер.',voiceDemoError:'Заповніть заявку на ваш Voice Back Office — і вже наступного дня отримайте його персональний номер.'});
 Object.assign(translations.en, {voiceDemoNote:'Complete the request for your Voice Back Office and receive its dedicated phone number the next day.',voiceDemoError:'Complete the request for your Voice Back Office and receive its dedicated phone number the next day.'});
+Object.assign(translations.de, {cancelLink:'Verträge hier kündigen'});
+Object.assign(translations.ru, {cancelLink:'Расторгнуть договор'});
+Object.assign(translations.uk, {cancelLink:'Розірвати договір'});
+Object.assign(translations.en, {cancelLink:'Cancel a contract'});
 
 const form = document.querySelector('#lead-form');
 const modal = document.querySelector('#success-modal');
