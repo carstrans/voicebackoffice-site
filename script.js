@@ -146,14 +146,23 @@ function loadWebCallWidget() {
     script.onload = () => {
       try {
         window.WebCallWidget.init({
-          customerIdn: 'C_NE_IX9E6NGA',
+          customerIdn: 'C_NE_N7WN9MP9',
           connectorIdn: 'newo_voice_connector_web',
           externalActorId: window.crypto?.randomUUID?.() || `vbo-${Date.now()}-${Math.random().toString(16).slice(2)}`,
           apiBaseUrl: 'https://app.newo.ai',
           showButton: false,
           useOnlyAudio: true,
           theme: 'dark',
-          callMetadata: { context: `Voice Back Office website. Interface language: ${currentLanguage}.` },
+          callMetadata: {
+            greetingPhrase: currentLanguage === 'de'
+              ? 'Hallo! Ich bin Emily von Voice Back Office. Wie kann ich Ihnen helfen?'
+              : currentLanguage === 'ru'
+                ? 'Здравствуйте! Я Эмили из Voice Back Office. Чем я могу вам помочь?'
+                : currentLanguage === 'uk'
+                  ? 'Вітаю! Я Емілі з Voice Back Office. Чим можу вам допомогти?'
+                  : 'Hello! I am Emily from Voice Back Office. How can I help you?',
+            context: `This is a live website demo for Voice Back Office. Interface language: ${currentLanguage}. Speak in the visitor's language.`
+          },
           onReady: (api) => { window.clearTimeout(timeout); webCallApi = api; resolve(api); }
         });
       } catch (error) { window.clearTimeout(timeout); reject(error); }
