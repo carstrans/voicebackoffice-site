@@ -272,3 +272,64 @@ footer {
   color: var(--ink);
   border-top-color: rgba(36,35,74,.1);
 }
+
+/* Voice Back Office — navy & blue rebrand, matches new VOB logo */
+:root {
+  --ink: #0b1c30;
+  --paper: #f7fafd;
+  --lime: #1f6feb;
+  --violet: #4f8ff7;
+  --muted: #55677d;
+  --line: rgba(11,28,48,.12);
+}
+
+body { background: var(--paper); }
+
+.logo-img { height: 60px; width: auto; display: block; }
+footer .logo-img { height: 46px; }
+
+.eyebrow span:first-child { background: var(--violet); box-shadow: 0 0 16px rgba(79,143,247,.4); }
+.button-primary { box-shadow: 0 10px 30px rgba(31,111,235,.24); }
+.hero-glow.one { background: var(--lime); opacity: .13; }
+.hero-glow.two { background: var(--violet); opacity: .13; }
+
+.assistant-orb { background: radial-gradient(circle, rgba(31,111,235,.2), rgba(79,143,247,.11) 52%, transparent 70%); }
+.orb-core { background: conic-gradient(from 30deg, #1f6feb, #7fb0f7, #0b1c30, #1f6feb); box-shadow: 0 0 35px rgba(31,111,235,.27); }
+
+.avatars span:first-child { background: #1f6feb; color: #fff; }
+.avatars span:nth-child(2) { background: #0b1c30; color: #fff; }
+.avatars span:nth-child(3) { background: #dce9ff; color: #123a75; }
+.avatars span:last-child { background: #d7e6fd; color: #123a75; }
+
+.voice-card { box-shadow: 0 34px 80px rgba(11,28,48,.16); }
+
+.ticker span { color: #d9e8ff; }
+
+.industry-card:hover { border-color: rgba(31,111,235,.28); box-shadow: 0 20px 38px rgba(11,28,48,.12); }
+.industry-card:nth-child(2n) { background: #f2f7ff; }
+
+.demo-form { box-shadow: 0 26px 70px rgba(11,28,48,.12); }
+
+.voice-demo-label span { box-shadow: 0 0 13px rgba(79,143,247,.7); }
+.voice-demo-button {
+  background: linear-gradient(110deg, var(--lime), #3a7ff0 58%, var(--violet));
+  box-shadow: 0 14px 34px rgba(31,111,235,.28);
+}
+.voice-demo-status { color: #3a5f92; }
+
+.demo-form input:focus, .demo-form textarea:focus { box-shadow: 0 0 0 3px rgba(79,143,247,.12); }
+.task-options label:has(input:checked) { background: rgba(79,143,247,.08); }
+
+.logo-mark { background: linear-gradient(135deg, #0b1c30, #1f6feb); }
+.logo b { color: #1f6feb; }
+.launch-timeline b { color: #4f8ff7; }
+.operations-grid .feature-symbol { background: #e8f1ff; color: #1f6feb; }
+.partners { background: linear-gradient(145deg, #0b1c30, #123a75 58%, #1f6feb); }
+.partner-button { color: #0b1c30; }
+.partner-copy p, .partner-options p { color: #d7e3fb; }
+
+.demo li:before { background: rgba(31,111,235,.12); }
+.integration-board article:hover { background: #eef4ff; }
+.operations { background: #eef3fb; }
+.operations-main { background: linear-gradient(150deg,#fff 30%,#e8f1ff); }
+.industry-card { background: #f4f8fd; }
