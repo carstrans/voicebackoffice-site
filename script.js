@@ -1,7 +1,7 @@
 const translations = {
   de: {
     title: 'Voice Back Office — KI-Telefonassistent für Unternehmen', description: 'Der KI-Telefonassistent für Verkauf und Kundenservice: erreichbar rund um die Uhr, natürlich im Gespräch und passend zu Ihrem Unternehmen.', aria: ['Voice Back Office — Startseite', 'Demonstration eines Gesprächs mit dem KI-Telefonassistenten', 'Funktionen'],
-    headerCta: 'Demo anfragen <span>↗</span>', heroEyebrow: 'Jeder Anruf führt weiter', heroTitle: 'Während andere<br>nicht rangehen,<br><em>verkaufen Sie bereits</em>', heroLead: 'Voice Back Office nimmt den Anruf an, versteht das Anliegen und führt den Kunden zum nächsten Schritt — jederzeit und in jeder Sprache.', heroPrimary: 'Live-Gespräch erleben <span>→</span>', heroSecondary: 'Erst zuhören. Dann entscheiden <span>↓</span>', heroProof: '<b>Hören Sie Ihren eigenen KI-Agenten</b><br>Stimme und Gespräch werden auf Ihr Unternehmen abgestimmt',
+    headerCta: 'Demo anfragen <span>↗</span>', heroEyebrow: 'Jeder Anruf führt weiter', heroTitle: 'Während andere<br>nicht rangehen,<br><em>verkaufen Sie bereits</em>', heroLead: 'Voice Back Office nimmt den Anruf an, versteht das Anliegen und führt den Kunden zum nächsten Schritt — jederzeit und in jeder Sprache.', heroPrimary: 'Mit unserem Berater sprechen <span>→</span>', heroSecondary: 'Formular ausfüllen — und schon morgen haben Sie Ihren eigenen Sprachassistenten <span>↓</span>', heroProof: '<b>Hören Sie Ihren eigenen KI-Agenten</b><br>Stimme und Gespräch werden auf Ihr Unternehmen abgestimmt',
     liveLabel: 'LIVE-GESPRÄCH · KEINE AUFNAHME', agentName: 'Anna · KI-Verkaufsagentin', agentTask: 'Qualifizierung einer neuen Anfrage', dialogue: 'Sehr gerne, Michael. Wann passt Ihnen eine kurze Präsentation am besten?', recognized: 'erkannt', response: 'Antwort', available: 'erreichbar', ticker: 'Eingehende Anrufe <span>✦</span> Aktiver Vertrieb <span>✦</span> CRM-Dokumentation <span>✦</span> Rund um die Uhr <span>✦</span> Natürliche Gespräche',
     problemEyebrow: 'Ein Anruf. Eine Chance.', problemTitle: 'Der Kunde hinterlässt keine Nachricht.<br><em>Er ruft den Wettbewerb an.</em>', metricOne: 'Wartezeit: Der Assistent beginnt das Gespräch sofort', metricEvery: 'Jeder', metricTwo: 'Anruf wird zum Gespräch statt zur Nachricht auf der Mailbox', metricThree: 'Hilfe auch nachts, am Wochenende und zu Stoßzeiten',
     howEyebrow: 'Einfach und nachvollziehbar', howTitle: 'Was Ihr Kunde auch fragt —<br><em>das Gespräch geht weiter</em>', howLead: '„Wo ist meine Bestellung?“, „Kann ich einen Termin buchen?“, „Was kostet das?“ — der Assistent versteht den Sinn und handelt nach Ihren Vorgaben.', stepOneTitle: 'Meldet sich in Ihrem Namen', stepOneText: 'Begrüßt Anrufende im Namen Ihres Unternehmens — ohne Warteschleife.', stepTwoTitle: 'Spricht frei statt nach Skript', stepTwoText: 'Versteht natürliche Sprache, fragt gezielt nach und kennt Ihre Leistungen.', stepThreeTitle: 'Übernimmt den nächsten Schritt', stepThreeText: 'Bucht Termine, dokumentiert Leads im CRM oder leitet wichtige Gespräche weiter.',
@@ -9,7 +9,7 @@ const translations = {
   },
   ru: {
     title: 'Voice Back Office — голосовой ИИ-продавец', description: 'Голосовой ИИ для продаж и клиентского сервиса: отвечает 24/7, естественно ведёт диалог и настраивается под ваш бизнес.', aria: ['Voice Back Office — на главную', 'Демонстрация звонка голосового помощника', 'Возможности'],
-    headerCta: 'Получить презентацию <span>↗</span>', heroEyebrow: 'Каждый звонок получает продолжение', heroTitle: 'Пока другие<br>не берут трубку,<br><em>вы уже продаёте</em>', heroLead: 'Voice Back Office принимает звонок, понимает запрос и ведёт клиента к следующему шагу — в любое время и на любом языке.', heroPrimary: 'Услышать живой звонок <span>→</span>', heroSecondary: 'Сначала послушайте. Потом решайте <span>↓</span>', heroProof: '<b>Послушайте своего ИИ</b><br>Подготовим голос и диалог под ваш бизнес',
+    headerCta: 'Получить презентацию <span>↗</span>', heroEyebrow: 'Каждый звонок получает продолжение', heroTitle: 'Пока другие<br>не берут трубку,<br><em>вы уже продаёте</em>', heroLead: 'Voice Back Office принимает звонок, понимает запрос и ведёт клиента к следующему шагу — в любое время и на любом языке.', heroPrimary: 'Поговорить с нашим консультантом <span>→</span>', heroSecondary: 'Заполнить анкету — и уже завтра у вас будет свой голосовой сотрудник <span>↓</span>', heroProof: '<b>Послушайте своего ИИ</b><br>Подготовим голос и диалог под ваш бизнес',
     liveLabel: 'ЖИВОЙ ДИАЛОГ · НЕ ЗАПИСЬ', agentName: 'Алиса · ИИ-продавец', agentTask: 'Квалификация нового лида', dialogue: 'Отлично, Михаил. Подберём удобное время для короткой презентации?', recognized: 'распознано', response: 'ответ', available: 'на связи', ticker: 'Входящие звонки <span>✦</span> Исходящие продажи <span>✦</span> Запись в CRM <span>✦</span> 24/7 без выходных <span>✦</span> Живой диалог',
     problemEyebrow: 'Один звонок — одна возможность', problemTitle: 'Клиент не оставил сообщение.<br><em>Он позвонил конкуренту.</em>', metricOne: 'ожидания на линии: помощник включается в разговор сразу', metricEvery: 'Каждый', metricTwo: 'звонок превращается в диалог, а не в запись на автоответчике', metricThree: 'клиент получает помощь ночью, в выходные и часы пик',
     howEyebrow: 'Просто и прозрачно', howTitle: 'Что бы ни спросил клиент —<br><em>разговор продолжится</em>', howLead: '«Где мой заказ?», «Можно записаться?», «Сколько стоит?» — помощник понимает смысл и действует по правилам вашего бизнеса.', stepOneTitle: 'Отвечает от вашего имени', stepOneText: 'Приветствует клиента от лица компании — без ожидания и музыки на линии.', stepTwoTitle: 'Не читает по бумажке', stepTwoText: 'Понимает свободную речь, уточняет детали и отвечает на вопросы о ваших услугах.', stepThreeTitle: 'Делает следующий шаг', stepThreeText: 'Записывает на встречу, фиксирует лид в CRM или переводит важный звонок человеку.',
@@ -17,7 +17,7 @@ const translations = {
   },
   en: {
     title: 'Voice Back Office — AI phone agent for business', description: 'An AI phone agent for sales and customer service: available 24/7, natural in conversation and tailored to your business.', aria: ['Voice Back Office — home', 'AI phone assistant call demonstration', 'Capabilities'],
-    headerCta: 'Request a demo <span>↗</span>', heroEyebrow: 'Every call moves forward', heroTitle: 'While others<br>miss the call,<br><em>you’re already selling</em>', heroLead: 'Voice Back Office answers, understands the request and moves the customer to the next step — at any time, in any language.', heroPrimary: 'Hear a live call <span>→</span>', heroSecondary: 'Listen first. Decide after <span>↓</span>', heroProof: '<b>Hear your own AI agent</b><br>We tailor the voice and conversation to your business',
+    headerCta: 'Request a demo <span>↗</span>', heroEyebrow: 'Every call moves forward', heroTitle: 'While others<br>miss the call,<br><em>you’re already selling</em>', heroLead: 'Voice Back Office answers, understands the request and moves the customer to the next step — at any time, in any language.', heroPrimary: 'Talk to our consultant <span>→</span>', heroSecondary: 'Fill out the form — and have your own voice agent as soon as tomorrow <span>↓</span>', heroProof: '<b>Hear your own AI agent</b><br>We tailor the voice and conversation to your business',
     liveLabel: 'LIVE CONVERSATION · NOT A RECORDING', agentName: 'Alice · AI sales agent', agentTask: 'Qualifying a new lead', dialogue: 'Great, Michael. What time would suit you for a short presentation?', recognized: 'recognized', response: 'response', available: 'available', ticker: 'Inbound calls <span>✦</span> Outbound sales <span>✦</span> CRM updates <span>✦</span> Available 24/7 <span>✦</span> Natural conversations',
     problemEyebrow: 'One call. One opportunity.', problemTitle: 'The customer did not leave a message.<br><em>They called your competitor.</em>', metricOne: 'waiting: the assistant starts the conversation immediately', metricEvery: 'Every', metricTwo: 'call becomes a conversation instead of a voicemail', metricThree: 'customers get help at night, on weekends and during peak hours',
     howEyebrow: 'Simple and transparent', howTitle: 'Whatever your customer asks —<br><em>the conversation continues</em>', howLead: '“Where is my order?”, “Can I book an appointment?”, “How much is it?” — the agent understands the intent and follows your business rules.', stepOneTitle: 'Answers in your name', stepOneText: 'Greets callers on behalf of your company — without hold music or waiting.', stepTwoTitle: 'Speaks freely, not from a script', stepTwoText: 'Understands natural speech, asks the right questions and knows your services.', stepThreeTitle: 'Takes the next step', stepThreeText: 'Books appointments, records leads in your CRM or transfers important calls to a person.',
@@ -27,7 +27,7 @@ const translations = {
 
 translations.uk = {
   title: 'Voice Back Office — голосовий ШІ-продавець', description: 'Голосовий ШІ для продажів і клієнтського сервісу: відповідає цілодобово, природно веде розмову та налаштовується під ваш бізнес.', aria: ['Voice Back Office — на головну', 'Демонстрація дзвінка голосового помічника', 'Можливості'],
-  headerCta: 'Замовити презентацію <span>↗</span>', heroEyebrow: 'Кожен дзвінок має продовження', heroTitle: 'Поки інші<br>не беруть слухавку,<br><em>ви вже продаєте</em>', heroLead: 'Voice Back Office приймає дзвінок, розуміє запит і веде клієнта до наступного кроку — у будь-який час і будь-якою мовою.', heroPrimary: 'Почути живу розмову <span>→</span>', heroSecondary: 'Спочатку послухайте. Потім вирішуйте <span>↓</span>', heroProof: '<b>Послухайте свого ШІ</b><br>Підготуємо голос і діалог саме для вашого бізнесу',
+  headerCta: 'Замовити презентацію <span>↗</span>', heroEyebrow: 'Кожен дзвінок має продовження', heroTitle: 'Поки інші<br>не беруть слухавку,<br><em>ви вже продаєте</em>', heroLead: 'Voice Back Office приймає дзвінок, розуміє запит і веде клієнта до наступного кроку — у будь-який час і будь-якою мовою.', heroPrimary: 'Поговорити з нашим консультантом <span>→</span>', heroSecondary: 'Заповнити анкету — і вже завтра у вас буде власний голосовий співробітник <span>↓</span>', heroProof: '<b>Послухайте свого ШІ</b><br>Підготуємо голос і діалог саме для вашого бізнесу',
   liveLabel: 'ЖИВА РОЗМОВА · НЕ ЗАПИС', agentName: 'Аліса · ШІ-продавець', agentTask: 'Кваліфікація нового звернення', dialogue: 'Чудово, Михайле. Коли вам буде зручно провести коротку презентацію?', recognized: 'розпізнано', response: 'відповідь', available: 'на зв’язку', ticker: 'Вхідні дзвінки <span>✦</span> Вихідні продажі <span>✦</span> Запис у CRM <span>✦</span> Цілодобово <span>✦</span> Жива розмова',
   problemEyebrow: 'Один дзвінок — одна можливість', problemTitle: 'Клієнт не залишив повідомлення.<br><em>Він зателефонував конкуренту.</em>', metricOne: 'очікування на лінії: помічник починає розмову одразу', metricEvery: 'Кожен', metricTwo: 'дзвінок стає розмовою, а не повідомленням на автовідповідачі', metricThree: 'клієнт отримує допомогу вночі, у вихідні та години пік',
   howEyebrow: 'Просто і прозоро', howTitle: 'Що б не запитав клієнт —<br><em>розмова триватиме</em>', howLead: '«Де моє замовлення?», «Можна записатися?», «Скільки це коштує?» — помічник розуміє зміст і діє за правилами вашого бізнесу.', stepOneTitle: 'Відповідає від вашого імені', stepOneText: 'Вітає клієнта від імені компанії — без очікування та музики на лінії.', stepTwoTitle: 'Говорить природно, не за шаблоном', stepTwoText: 'Розуміє вільне мовлення, уточнює деталі та відповідає на запитання про ваші послуги.', stepThreeTitle: 'Робить наступний крок', stepThreeText: 'Записує на зустріч, фіксує звернення в CRM або переводить важливий дзвінок на людину.',
@@ -149,6 +149,8 @@ const closeModal = document.querySelector('#close-modal');
 const phone = form.elements.phone;
 const voiceDemoButton = document.querySelector('#voice-demo-button');
 const voiceDemoStatus = document.querySelector('#voice-demo-status');
+const heroVoiceButton = document.querySelector('#hero-voice-button');
+const heroVoiceStatus = document.querySelector('#hero-voice-status');
 let currentLanguage = 'de';
 let webCallApi = null;
 let webCallLoading = null;
@@ -164,7 +166,7 @@ function loadWebCallWidget() {
     script.onload = () => {
       try {
         window.WebCallWidget.init({
-          customerIdn: 'C_NE_ELHH8DBX',
+          customerIdn: 'C_NE_N7WN9MP9',
           connectorIdn: 'newo_voice_connector_web',
           externalActorId: window.crypto?.randomUUID?.() || `vbo-${Date.now()}-${Math.random().toString(16).slice(2)}`,
           apiBaseUrl: 'https://app.newo.ai',
@@ -194,20 +196,23 @@ function loadWebCallWidget() {
   });
 }
 
-voiceDemoButton.addEventListener('click', async () => {
-  voiceDemoButton.disabled = true;
-  voiceDemoStatus.textContent = translations[currentLanguage].voiceDemoLoading;
+async function startVoiceCall(button, status) {
+  button.disabled = true;
+  if (status) status.textContent = translations[currentLanguage].voiceDemoLoading;
   try {
     const api = await loadWebCallWidget();
     api.openCall();
-    voiceDemoStatus.textContent = '';
+    if (status) status.textContent = '';
   } catch (error) {
     console.error('Unable to open Newo Web Call Widget', error);
-    voiceDemoStatus.textContent = translations[currentLanguage].voiceDemoError;
+    if (status) status.textContent = translations[currentLanguage].voiceDemoError;
   } finally {
-    voiceDemoButton.disabled = false;
+    button.disabled = false;
   }
-});
+}
+
+voiceDemoButton.addEventListener('click', () => startVoiceCall(voiceDemoButton, voiceDemoStatus));
+heroVoiceButton.addEventListener('click', () => startVoiceCall(heroVoiceButton, heroVoiceStatus));
 
 // Preload the call client so mobile browsers can open it immediately after a tap.
 window.addEventListener('load', () => {

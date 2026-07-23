@@ -316,6 +316,8 @@ footer .logo-img { height: 46px; }
   box-shadow: 0 14px 34px rgba(31,111,235,.28);
 }
 .voice-demo-status { color: #3a5f92; }
+.hero-voice-status { min-height: 16px; margin: 10px 0 0; font-size: 11px; color: #3a5f92; }
+.button:disabled { cursor: wait; opacity: .72; }
 
 .demo-form input:focus, .demo-form textarea:focus { box-shadow: 0 0 0 3px rgba(79,143,247,.12); }
 .task-options label:has(input:checked) { background: rgba(79,143,247,.08); }
