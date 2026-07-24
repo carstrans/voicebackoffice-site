@@ -285,8 +285,8 @@ footer {
 
 body { background: var(--paper); }
 
-.logo-img { height: 60px; width: auto; display: block; }
-footer .logo-img { height: 46px; }
+.logo-img { height: 72px; width: auto; display: block; }
+footer .logo-img { height: 56px; }
 
 .eyebrow span:first-child { background: var(--violet); box-shadow: 0 0 16px rgba(79,143,247,.4); }
 .button-primary { box-shadow: 0 10px 30px rgba(31,111,235,.24); }
